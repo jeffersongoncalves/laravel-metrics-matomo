@@ -1,0 +1,7 @@
+/.idea
+/vendor
+/.phpunit.cache
+/node_modules
+.env
+composer.lock
+.claude/settings.local.json
