@@ -18,7 +18,7 @@ class MatomoClient
 
     /**
      * @param  array<string, mixed>  $params
-     * @return array<string, mixed>|list<array<string, mixed>>
+     * @return array<int|string, mixed>
      */
     public function request(string $method, array $params = []): array
     {
@@ -59,7 +59,7 @@ class MatomoClient
     }
 
     /**
-     * @return array<string, mixed>|list<array<string, mixed>>
+     * @return array<int|string, mixed>
      */
     private function handleResponse(Response $response): array
     {

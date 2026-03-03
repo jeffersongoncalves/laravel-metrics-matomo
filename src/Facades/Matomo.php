@@ -35,11 +35,11 @@ use JeffersonGoncalves\MetricsMatomo\Queries\ReportQuery;
  * @method static list<ReportRow> eventCategories(Period $period = Period::Day, string $date = 'today', ?int $limit = null, ?int $siteId = null)
  * @method static list<ReportRow> eventActions(Period $period = Period::Day, string $date = 'today', ?int $limit = null, ?int $siteId = null)
  * @method static list<ReportRow> eventNames(Period $period = Period::Day, string $date = 'today', ?int $limit = null, ?int $siteId = null)
- * @method static array<string, mixed> goals(Period $period = Period::Day, string $date = 'today', ?int $siteId = null)
- * @method static array<string, mixed> goal(int $goalId, Period $period = Period::Day, string $date = 'today', ?int $siteId = null)
+ * @method static array<int|string, mixed> goals(Period $period = Period::Day, string $date = 'today', ?int $siteId = null)
+ * @method static array<int|string, mixed> goal(int $goalId, Period $period = Period::Day, string $date = 'today', ?int $siteId = null)
  * @method static LiveCounter liveCounters(int $lastMinutes = 30, ?int $siteId = null)
  * @method static list<array<string, mixed>> liveVisitors(int $count = 10, ?int $siteId = null)
- * @method static array<string, mixed>|list<array<string, mixed>> report(ReportQuery $query)
+ * @method static array<int|string, mixed> report(ReportQuery $query)
  * @method static ReportQuery query(string $module, string $method)
  *
  * @see \JeffersonGoncalves\MetricsMatomo\Matomo

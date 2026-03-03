@@ -21,6 +21,7 @@ class Matomo
 
     public function visitsSummary(Period $period = Period::Day, string $date = 'today', ?int $siteId = null): VisitSummary
     {
+        /** @var array<string, mixed> $response */
         $response = $this->call('VisitsSummary', 'get', $period, $date, $siteId);
 
         return VisitSummary::fromArray($response);
@@ -247,7 +248,7 @@ class Matomo
     // =========================================================================
 
     /**
-     * @return array<string, mixed>
+     * @return array<int|string, mixed>
      */
     public function goals(Period $period = Period::Day, string $date = 'today', ?int $siteId = null): array
     {
@@ -255,7 +256,7 @@ class Matomo
     }
 
     /**
-     * @return array<string, mixed>
+     * @return array<int|string, mixed>
      */
     public function goal(int $goalId, Period $period = Period::Day, string $date = 'today', ?int $siteId = null): array
     {
@@ -307,7 +308,7 @@ class Matomo
     // =========================================================================
 
     /**
-     * @return array<string, mixed>|list<array<string, mixed>>
+     * @return array<int|string, mixed>
      */
     public function report(ReportQuery $query): array
     {
@@ -324,7 +325,7 @@ class Matomo
     // =========================================================================
 
     /**
-     * @return array<string, mixed>
+     * @return array<int|string, mixed>
      */
     private function call(string $module, string $method, Period $period, string $date, ?int $siteId = null): array
     {
