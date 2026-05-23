@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-metrics-matomo` will be documented in this file.
 
+## v1.1.1 - 2026-05-23
+
+**Full Changelog**: https://github.com/jeffersongoncalves/laravel-metrics-matomo/compare/v1.1.0...v1.1.1
+
 ## v1.1.0 - 2026-05-23
 
 ### What's Changed
