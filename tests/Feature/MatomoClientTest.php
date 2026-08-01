@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Http;
+use JeffersonGoncalves\MetricsMatomo\Enums\Period;
 use JeffersonGoncalves\MetricsMatomo\Exceptions\AuthenticationException;
 use JeffersonGoncalves\MetricsMatomo\Exceptions\MatomoException;
 use JeffersonGoncalves\MetricsMatomo\Exceptions\RateLimitException;
@@ -183,7 +184,7 @@ it('executes generic report query', function () {
 
     $matomo = app('matomo');
     $query = $matomo->query('VisitsSummary', 'get')
-        ->period(\JeffersonGoncalves\MetricsMatomo\Enums\Period::Month)
+        ->period(Period::Month)
         ->date('2026-02-01')
         ->limit(50);
 
