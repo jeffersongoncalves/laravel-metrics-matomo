@@ -6,6 +6,8 @@
 
 # Laravel Metrics Matomo
 
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/jeffersongoncalves)
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/laravel-metrics-matomo.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/laravel-metrics-matomo)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/laravel-metrics-matomo/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/laravel-metrics-matomo/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![PHPStan](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/laravel-metrics-matomo/phpstan.yml?branch=main&label=PHPStan&style=flat-square)](https://github.com/jeffersongoncalves/laravel-metrics-matomo/actions?query=workflow%3APHPStan+branch%3Amain)
